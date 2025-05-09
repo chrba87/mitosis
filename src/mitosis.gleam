@@ -1,6 +1,10 @@
 import p5js_gleam.{type P5}
 import p5js_gleam/bindings as p5
 
+type Vector {
+  Vector(x: Float, y: Float)
+}
+
 type State {
   State(x: Float, y: Float)
 }
