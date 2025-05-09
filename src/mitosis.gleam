@@ -14,7 +14,12 @@ fn draw(p: P5, state: State) {
   p5.background(p, "#101010")
 }
 
+fn tick(state: State) -> State {
+  state
+}
+
 pub fn main() -> Nil {
   p5js_gleam.create_sketch(init: setup, draw: draw)
+  |> p5js_gleam.set_on_tick(tick)
   |> p5.start_sketch
 }
